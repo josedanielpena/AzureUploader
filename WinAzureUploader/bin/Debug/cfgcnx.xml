@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CfgCnx xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <AccountName>storagehtm</AccountName>
+  <AcoountKey>PgFPs/4NraX4Y0GFPecT6cm6HpMtuJHJzBh7MwcM7Vm1SfOu3cByTh76Z7LNHt0fPeNUxcT2VujdmOyMd6h3Xg==</AcoountKey>
+  <ContainerName>usuarios</ContainerName>
+  <IdUsuario>jose</IdUsuario>
+  <KeyUsuario />
+</CfgCnx>

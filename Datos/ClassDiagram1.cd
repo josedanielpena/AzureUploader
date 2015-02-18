@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="Datos.SoporteArchivos.Archivo">
+    <Position X="0.5" Y="0.5" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AIBBAAQAEAAAAABAAAAAIEAAgAAgQAAAAAAAAAAACAA=</HashCode>
+      <FileName>SoporteArchivos\Archivo.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Datos.SoporteArchivos.ArchivoUsuario">
+    <Position X="0.5" Y="4.5" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAAEAA=</HashCode>
+      <FileName>SoporteArchivos\ArchivoUsuario.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Datos.SoporteArchivos.TableEntryUsuario">
+    <Position X="3.25" Y="0.5" Width="2.75" />
+    <TypeIdentifier>
+      <HashCode>AIAAAAAABAAAAABAAAAAIEQQgAgAQAAAAAAAAAAAAAg=</HashCode>
+      <FileName>SoporteArchivos\TableEntryUsuario.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Datos.SoporteArchivos.UtilesAzure">
+    <Position X="6.25" Y="0.5" Width="2.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAFAAAABAAAgA=</HashCode>
+      <FileName>SoporteArchivos\UtilesAzure.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Interface Name="Datos.SoporteArchivos.IArchivo">
+    <Position X="3.25" Y="5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AIAAAAAAAAAAAABAAAAAIEAAgAAAQAAAAAAAAAAAAAA=</HashCode>
+      <FileName>SoporteArchivos\IArchivo.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
