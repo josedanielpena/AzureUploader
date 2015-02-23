@@ -31,6 +31,9 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>htm_secundario__escritorio_icono.ico</ApplicationIcon>
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -83,6 +86,7 @@
     <EmbeddedResource Include="WinAboutAzureUploader.resx">
       <DependentUpon>WinAboutAzureUploader.cs</DependentUpon>
     </EmbeddedResource>
+    <None Include="app.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -132,6 +136,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Slide-tecnologia-a-su-alcance.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="htm_secundario__escritorio_icono.ico" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

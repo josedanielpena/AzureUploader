@@ -180,6 +180,18 @@ namespace WinAzureUploader
 
                 savedialog.FileName = elemento.NombreRealArchivo;
 
+                //.DefaultExt = "txt";
+
+                string[] partesNombre = elemento.NombreRealArchivo.Split('.');
+
+                savedialog.DefaultExt = partesNombre[partesNombre.Length - 1];
+
+                string extension = partesNombre[partesNombre.Length - 1];
+
+                string filtrosavedialog = " extension ." + extension + "|*." + extension + "|All Files (*.*)|*.*";
+
+                savedialog.Filter = filtrosavedialog;
+
                 if (savedialog.ShowDialog() == DialogResult.OK)
                 {
                     byte[] archivo = elemento.GetData();
@@ -207,10 +219,17 @@ namespace WinAzureUploader
 
             Datos.SoporteArchivos.ArchivoUsuario elemento = (Datos.SoporteArchivos.ArchivoUsuario)elementoSeleccionado;
 
-            
+            if (!elemento.ArchivoPublico)
+            {
+                MessageBox.Show("El archivo esta marcado como privado", "Informacion", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+            else
+            {
+                MessageBox.Show("URL Publica:  " + elemento.getPublicURL() + System.Environment.NewLine + "Ruta Copiada Exitosamente al portapapeles", "Mensaje del Sistema", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                Clipboard.SetText(elemento.getPublicURL());
+            }
 
-            MessageBox.Show("URL Publica:  " + elemento.getPublicURL() + System.Environment.NewLine + "Ruta Copiada Exitosamente al portapapeles", "Mensaje del Sistema", MessageBoxButtons.OK, MessageBoxIcon.Information);
-            Clipboard.SetText(elemento.getPublicURL());
+
         }
 
         private void backgroundWorkerUploader_DoWork(object sender, DoWorkEventArgs e)

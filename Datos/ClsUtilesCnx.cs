@@ -89,13 +89,34 @@ namespace Datos
         public static CfgCnx LeerXMLConexionServidor()
         {
 
-            XmlSerializer serializador = new XmlSerializer(typeof(CfgCnx));
+            try
+            {
+                FileInfo InfoArchivo = new FileInfo("cfgcnx.xml");
 
-            StreamReader r = new StreamReader("cfgcnx.xml");
+                if (InfoArchivo.Exists)
+                {
+                    XmlSerializer serializador = new XmlSerializer(typeof(CfgCnx));
 
-            CfgCnx ConexionBD = (CfgCnx)serializador.Deserialize(r);
-            r.Close();
-            return ConexionBD;
+                    StreamReader r = new StreamReader("cfgcnx.xml");
+
+                    CfgCnx ConexionBD = (CfgCnx)serializador.Deserialize(r);
+                    r.Close();
+                    return ConexionBD;
+                }
+                else
+                {
+                    throw new Exception("Archivo de Configuracion no Encontrado...");
+                }
+
+
+            }
+            catch (Exception error)
+            {
+                
+                throw;
+            }
+
+
         }
 
     }

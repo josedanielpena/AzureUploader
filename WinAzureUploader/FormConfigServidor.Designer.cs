@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormConfigServidor));
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.textBoxIdUsuario = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
@@ -70,9 +71,9 @@
             // 
             this.textBoxIdUsuario.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBoxIdUsuario.Location = new System.Drawing.Point(90, 146);
+            this.textBoxIdUsuario.Location = new System.Drawing.Point(105, 146);
             this.textBoxIdUsuario.Name = "textBoxIdUsuario";
-            this.textBoxIdUsuario.Size = new System.Drawing.Size(257, 20);
+            this.textBoxIdUsuario.Size = new System.Drawing.Size(242, 20);
             this.textBoxIdUsuario.TabIndex = 4;
             // 
             // label4
@@ -80,17 +81,17 @@
             this.label4.AutoSize = true;
             this.label4.Location = new System.Drawing.Point(7, 149);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(52, 13);
+            this.label4.Size = new System.Drawing.Size(92, 13);
             this.label4.TabIndex = 6;
-            this.label4.Text = "IdUsuario";
+            this.label4.Text = "IdUsuario / Indice";
             // 
             // textBoxContainerName
             // 
             this.textBoxContainerName.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBoxContainerName.Location = new System.Drawing.Point(90, 120);
+            this.textBoxContainerName.Location = new System.Drawing.Point(105, 120);
             this.textBoxContainerName.Name = "textBoxContainerName";
-            this.textBoxContainerName.Size = new System.Drawing.Size(257, 20);
+            this.textBoxContainerName.Size = new System.Drawing.Size(242, 20);
             this.textBoxContainerName.TabIndex = 3;
             // 
             // label3
@@ -106,11 +107,11 @@
             // 
             this.textBoxAcoountKey.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBoxAcoountKey.Location = new System.Drawing.Point(90, 57);
+            this.textBoxAcoountKey.Location = new System.Drawing.Point(105, 57);
             this.textBoxAcoountKey.Multiline = true;
             this.textBoxAcoountKey.Name = "textBoxAcoountKey";
             this.textBoxAcoountKey.PasswordChar = '*';
-            this.textBoxAcoountKey.Size = new System.Drawing.Size(257, 57);
+            this.textBoxAcoountKey.Size = new System.Drawing.Size(242, 57);
             this.textBoxAcoountKey.TabIndex = 2;
             // 
             // label2
@@ -120,15 +121,15 @@
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(65, 13);
             this.label2.TabIndex = 2;
-            this.label2.Text = "AcoountKey";
+            this.label2.Text = "AccountKey";
             // 
             // textBoxAccountName
             // 
             this.textBoxAccountName.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBoxAccountName.Location = new System.Drawing.Point(90, 31);
+            this.textBoxAccountName.Location = new System.Drawing.Point(105, 31);
             this.textBoxAccountName.Name = "textBoxAccountName";
-            this.textBoxAccountName.Size = new System.Drawing.Size(257, 20);
+            this.textBoxAccountName.Size = new System.Drawing.Size(242, 20);
             this.textBoxAccountName.TabIndex = 1;
             // 
             // label1
@@ -197,6 +198,7 @@
             this.Controls.Add(this.buttonGuardar);
             this.Controls.Add(this.groupBox1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "FormConfigServidor";
             this.Text = "Configuracion Servidor";
             this.groupBox1.ResumeLayout(false);

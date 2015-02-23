@@ -39,7 +39,9 @@ namespace WinAzureUploader
             catch (Exception error)
             {
 
-                MessageBox.Show("OCURRIO UN ERROR: " + error.Message);
+                MessageBox.Show("OCURRIO UN ERROR: " + error.Message, "Error leyendo Archivo de Configuracon", 
+                    MessageBoxButtons.OK, MessageBoxIcon.Error);
+                //MessageBox.Show("No se enc
             }
         
         }
@@ -56,8 +58,8 @@ namespace WinAzureUploader
 
             ConexionServidor.AccountName = textBoxAccountName.Text;
             ConexionServidor.AcoountKey = textBoxAcoountKey.Text;
-            ConexionServidor.ContainerName = textBoxContainerName.Text;
-            ConexionServidor.IdUsuario = textBoxIdUsuario.Text;
+            ConexionServidor.ContainerName = textBoxContainerName.Text.ToLower();
+            ConexionServidor.IdUsuario = textBoxIdUsuario.Text.ToLower();
 
 
             Datos.ClsUtilesCnx.EscribirXMLConexionServidor(ConexionServidor);
